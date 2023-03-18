@@ -1,0 +1,185 @@
+/******** GLOBAL STYLES ********/
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    color: #000000;
+    font-size: .9em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.875em;
+
+}
+
+h2 {
+    font-size: 1.5em;
+
+}
+
+h3 {
+    font-size: 1.25em;
+
+}
+
+h4 {
+    font-size: 0.75em;
+
+}
+
+p {
+    line-height: 36px;
+
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+/******** HEADER STYLES ********/
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    /*outline: 3px dotted red;*/
+    width: 100%;
+    padding: 36px 0px;
+}
+
+header h1 span {
+    color: #45610E;
+
+}
+
+header nav {
+    /*outline: 3px dotted red;*/
+    /*width: 300px;*/
+    padding: 44px 0px;
+}
+
+header nav ul {
+    padding: 0px;
+    text-align: right;
+    flex-flow: row wrap;
+}
+
+header nav ul li {
+    font-size: 0.875em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #45610E;
+}
+
+/********  MAIN STYLES ********/
+/******** TOP SECTION ********/
+
+.top-section {
+    display: flex;
+    justify-content: center;
+}
+
+.main-image img {
+    border-top: 3px solid #77A466;
+    border-bottom: 3px solid #77A466;
+    ;
+
+}
+
+.main-title h2 {
+    color: #45610E;
+    padding: 5px 0px;
+
+}
+
+/******** BOTTOM SECTION ********/
+.bottom-section {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-section .content-wrapper {
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+
+}
+
+.section-one,
+.section-two,
+.section-three {
+    /*outline: 3px dotted red;*/
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+}
+
+.section-one {
+    /*width: 350px;*/
+
+}
+
+.section-two {
+    /*width: 500px;*/
+    border-left: 5px solid #eee;
+    border-right: 5px solid #eee;
+}
+
+.section-three {
+    /*width: 350px;*/
+
+}
+
+.bottom-section h3 {
+    margin: 30px 0px;
+
+}
+
+.menu-list {
+    padding-left: 0px;
+    list-style: none;
+}
+
+.menu-list li {
+    color: #45610E;
+    line-height: 36px;
+}
+
+/******** FOOTER STYLES ********/
+footer {
+    text-align: center;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+footer span {
+    font-family: "Galada", cursive;
+    text-transform: lowercase;
+    color: #45610E;
+    font-size: 0.875em;
+}
