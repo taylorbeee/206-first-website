@@ -39,6 +39,7 @@ h4 {
 
 p {
     line-height: 36px;
+    font-size: 1rem;
 
 }
 
@@ -47,6 +48,7 @@ p {
     width: 90%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
 }
 
@@ -60,7 +62,9 @@ header {
 header h1 {
     /*outline: 3px dotted red;*/
     width: 100%;
-    padding: 36px 0px;
+    padding: 38px 0  20px 0;
+    margin: 0;
+    border-bottom: 3px solid #77A466;
 }
 
 header h1 span {
@@ -71,23 +75,21 @@ header h1 span {
 header nav {
     /*outline: 3px dotted red;*/
     /*width: 300px;*/
-    padding: 44px 0px;
+    padding: 20px 0px;
 }
 
 header nav ul {
-    padding: 0px;
-    text-align: right;
-    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
     font-size: 0.875em;
     text-transform: uppercase;
     font-weight: bold;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 0;
     width: 100%;
-    list-style-type: none;
+    list-style: none;
 }
 
 header nav ul li a {
@@ -98,7 +100,8 @@ header nav ul li a {
 /********  MAIN STYLES ********/
 /******** TOP SECTION ********/
 
-.top-section {
+.top-section,
+.bottom-section {
     display: flex;
     justify-content: center;
 }
@@ -106,21 +109,15 @@ header nav ul li a {
 .main-image img {
     border-top: 3px solid #77A466;
     border-bottom: 3px solid #77A466;
-    ;
-
+    width: 100%;
 }
 
 .main-title h2 {
     color: #45610E;
     padding: 5px 0px;
-
 }
 
 /******** BOTTOM SECTION ********/
-.bottom-section {
-    display: flex;
-    justify-content: center;
-}
 
 .bottom-section .content-wrapper {
     border-top: 5px solid #eee;
@@ -133,8 +130,6 @@ header nav ul li a {
 .section-three {
     /*outline: 3px dotted red;*/
     box-sizing: border-box;
-    padding-left: 40px;
-    padding-right: 40px;
     width: 100%;
 }
 
@@ -145,8 +140,8 @@ header nav ul li a {
 
 .section-two {
     /*width: 500px;*/
-    border-left: 5px solid #eee;
-    border-right: 5px solid #eee;
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
 }
 
 .section-three {
@@ -167,11 +162,12 @@ header nav ul li a {
 .menu-list li {
     color: #45610E;
     line-height: 36px;
+    font-size: 1rem;
 }
 
 /******** FOOTER STYLES ********/
 footer {
-    text-align: center;
+    /*text-align: center;*/
     margin-top: 8px;
     display: flex;
     justify-content: center;
