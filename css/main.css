@@ -48,7 +48,6 @@ p {
     width: 90%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
 }
 
@@ -62,7 +61,7 @@ header {
 header h1 {
     /*outline: 3px dotted red;*/
     width: 100%;
-    padding: 38px 0  20px 0;
+    padding: 38px 0 20px 0;
     margin: 0;
     border-bottom: 3px solid #77A466;
 }
@@ -81,6 +80,7 @@ header nav {
 header nav ul {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 header nav ul li {
@@ -89,7 +89,6 @@ header nav ul li {
     font-weight: bold;
     padding: 10px 0;
     width: 100%;
-    list-style: none;
 }
 
 header nav ul li a {
@@ -100,11 +99,6 @@ header nav ul li a {
 /********  MAIN STYLES ********/
 /******** TOP SECTION ********/
 
-.top-section,
-.bottom-section {
-    display: flex;
-    justify-content: center;
-}
 
 .main-image img {
     border-top: 3px solid #77A466;
@@ -115,6 +109,12 @@ header nav ul li a {
 .main-title h2 {
     color: #45610E;
     padding: 5px 0px;
+}
+
+.top-section,
+.bottom-section {
+    display: flex;
+    justify-content: center;
 }
 
 /******** BOTTOM SECTION ********/
@@ -171,6 +171,7 @@ footer {
     margin-top: 8px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 footer span {
@@ -178,4 +179,64 @@ footer span {
     text-transform: lowercase;
     color: #45610E;
     font-size: 0.875em;
+}
+
+/******** TABLET STYLES ********/
+@media all and (min-width: 768px) {
+    .bottom-section .content-wrapper {
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+
+    .section-one {
+        /*width: 350px;*/
+        width: 26%;
+    }
+
+    .section-two {
+        /*width: 500px;*/
+        border-right: 5px solid #eee;
+        border-left: 5px solid #eee;
+        border-top: none;
+        border-bottom: none;
+        padding: 0px 30px;
+        width: 40%;
+    }
+
+    .section-three {
+        /*width: 350px;*/
+        width: 26%;
+    }
+}
+
+/******** DESKTOP STYLES ********/
+@media all and (min-width: 1200px) {
+    body {
+        font-size: 1em;
+    }
+
+    header .content-wrapper {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    
+    header h1 {
+        /*outline: 3px dotted red;*/
+        width: 30%;
+        padding: 0;
+        border-bottom: none;
+        text-align: left;
+    }
+    
+    header nav {
+        /*outline: 3px dotted red;*/
+        width: 21%;
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
 }
